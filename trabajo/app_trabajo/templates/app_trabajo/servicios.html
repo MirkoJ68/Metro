@@ -1,0 +1,139 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Servicios
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/servicios.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="principal">
+
+    <div class="imagen">
+    </div>
+
+    <div class="informacion">
+
+        <h1>Viajá con MetroLBDG</h1>
+
+        <p>
+            Descubrí una nueva forma de viajar. En MetroLBDG ofrecemos un servicio
+            rápido, seguro y cómodo para que llegues a destino de la mejor manera.
+            Miles de pasajeros confían en nosotros todos los días.
+        </p>
+
+        <a href="#servicios" class="boton">
+            Ver nuestros servicios
+        </a>
+
+    </div>
+
+</section>
+
+<section class="titulo">
+
+    <h2>Nuestros Servicios</h2>
+
+    <p>Elegí el plan que mejor se adapte a tus necesidades.</p>
+
+</section>
+
+<section class="servicios" id="servicios">
+
+    <div class="card">
+
+        <div class="icono">🎫</div>
+
+        <h3>Boleto Simple</h3>
+
+        <h4>$1.200</h4>
+
+        <ul>
+            <li>✔ Un viaje.</li>
+            <li>✔ Todas las líneas.</li>
+            <li>✔ Compra inmediata.</li>
+            <li>✔ Sin registro.</li>
+        </ul>
+
+    </div>
+
+    <div class="card destacado">
+
+        <div class="icono">💳</div>
+
+        <h3>Tarjeta Recargable</h3>
+
+        <h4>$5.000</h4>
+
+        <ul>
+            <li>✔ Recargas online.</li>
+            <li>✔ Descuentos exclusivos.</li>
+            <li>✔ Viajes más rápidos.</li>
+            <li>✔ Recomendado.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icono">🎓</div>
+
+        <h3>Pase Estudiantil</h3>
+
+        <h4>$700</h4>
+
+        <ul>
+            <li>✔ Tarifa reducida.</li>
+            <li>✔ Presentando certificado.</li>
+            <li>✔ Todas las líneas.</li>
+            <li>✔ Durante el ciclo lectivo.</li>
+        </ul>
+
+    </div>
+
+    <div class="card">
+
+        <div class="icono">👴</div>
+
+        <h3>Pase Jubilados</h3>
+
+        <h4>$500</h4>
+
+        <ul>
+            <li>✔ Precio preferencial.</li>
+            <li>✔ Todas las líneas.</li>
+            <li>✔ Atención prioritaria.</li>
+            <li>✔ Beneficios especiales.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="beneficios">
+
+    <h2>¿Por qué elegir MetroLBDG?</h2>
+
+    <div class="lista">
+
+        <div>🚆 Trenes modernos</div>
+
+        <div>📶 WiFi gratuito</div>
+
+        <div>❄ Aire acondicionado</div>
+
+        <div>🛡 Seguridad 24 horas</div>
+
+        <div>♿ Accesibilidad</div>
+
+        <div>📍 Estaciones estratégicas</div>
+
+    </div>
+
+</section>
+
+{% endblock %}

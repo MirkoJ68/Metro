@@ -1,0 +1,219 @@
+.horarios {
+
+    width: 92%;
+    max-width: 1250px;
+
+    margin: 55px auto 80px;
+
+}
+
+.titulo-panel {
+
+    background: #006b35;
+
+    color: white;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    border-radius: 8px 8px 0 0;
+
+}
+
+.titulo-panel h1 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    text-transform: uppercase;
+
+}
+
+.titulo-panel span {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+.panel-horarios {
+
+    background: #111;
+
+    color: #ffb000;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+    overflow: hidden;
+
+}
+
+.encabezados {
+
+    display: grid;
+
+    grid-template-columns:
+        140px
+        1.6fr
+        1.2fr
+        100px
+        1.2fr;
+
+    background: #181818;
+
+    color: #eeeeee;
+
+    padding: 15px 25px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    border-bottom: 3px solid #333;
+
+}
+
+.fila {
+
+    display: grid;
+
+    grid-template-columns:
+        140px
+        1.6fr
+        1.2fr
+        100px
+        1.2fr;
+
+    align-items: center;
+
+    min-height: 65px;
+
+    padding: 0 25px;
+
+    border-bottom: 2px solid #292929;
+
+    font-family: "Courier New", monospace;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: .2s;
+
+}
+
+.fila:hover {
+
+    background: #1c1c1c;
+
+}
+
+.hora {
+
+    font-size: 24px;
+
+    color: #ff9d00;
+
+}
+
+.destino {
+
+    color: #ffb000;
+
+    text-transform: uppercase;
+
+}
+
+.linea {
+
+    color: #ffb000;
+
+}
+
+.via {
+
+    text-align: center;
+
+    color: #ffb000;
+
+}
+
+.estado {
+
+    color: #ffb000;
+
+    font-size: 15px;
+
+}
+
+.mensaje {
+
+    background: #006b35;
+
+    color: white;
+
+    padding: 16px 25px;
+
+    font-family: "Courier New", monospace;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    border-radius: 0 0 8px 8px;
+
+}
+
+@media(max-width: 800px) {
+
+    .horarios {
+
+        width: 96%;
+
+    }
+
+    .titulo-panel {
+
+        padding: 15px;
+
+    }
+
+    .titulo-panel h1 {
+
+        font-size: 25px;
+
+    }
+
+    .titulo-panel span {
+
+        font-size: 15px;
+
+    }
+
+    .panel-horarios {
+
+        overflow-x: auto;
+
+    }
+
+    .encabezados,
+    .fila {
+
+        min-width: 850px;
+
+    }
+
+}

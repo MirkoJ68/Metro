@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>{% block titulo %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'app_trabajo/css/base.css' %}">
+
+    {% block css %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🚆 MetroLBDG
+    </div>
+
+    <nav>
+
+        <a href="{% url 'inicio' %}">Inicio</a>
+
+        <a href="{% url 'horarios' %}">Horarios</a>
+
+        <a href="{% url 'estaciones' %}">Estaciones</a>
+
+        <a href="{% url 'reclamos' %}">Reclamos</a>
+
+        <a href="{% url 'servicios' %}">Servicios</a>
+
+        {% if request.session.rol == "admin" %}
+            <a href="{% url 'trenes' %}">Trenes</a>
+        {% endif %}
+
+        {% if request.session.usuario %}
+
+            <span class="saludo">
+                Hola, {{ request.session.usuario }}
+            </span>
+
+            <a href="{% url 'logout' %}">Cerrar sesión</a>
+
+        {% else %}
+
+            <a href="{% url 'login' %}">Iniciar sesión</a>
+
+        {% endif %}
+
+    </nav>
+
+</header>
+
+{% block contenido %}
+{% endblock %}
+
+<footer>
+
+    <p>© 2026 MetroLBDG - Sistema de consulta ferroviaria.</p>
+
+</footer>
+
+</body>
+
+</html>
+```

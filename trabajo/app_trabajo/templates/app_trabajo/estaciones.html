@@ -1,0 +1,44 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Estaciones
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/estaciones.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="contenedor">
+
+    <h1>Estaciones disponibles</h1>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h2>Central</h2>
+            <p>Estación principal del sistema.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Universidad</h2>
+            <p>Conecta con el campus universitario.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Terminal</h2>
+            <p>Conexión con ómnibus de larga distancia.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Aeropuerto</h2>
+            <p>Acceso directo al aeropuerto.</p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

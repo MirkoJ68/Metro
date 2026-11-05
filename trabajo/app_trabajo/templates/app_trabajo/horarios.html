@@ -1,0 +1,240 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Horarios
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/horarios.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="horarios">
+
+    <div class="titulo-panel">
+        <h1>Salidas</h1>
+        <span>DEPARTURES</span>
+    </div>
+
+    <div class="panel-horarios">
+
+        <div class="encabezados">
+
+            <div>Hora</div>
+
+            <div>Destino</div>
+
+            <div>Línea</div>
+
+            <div>Vía</div>
+
+            <div>Estado</div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                08:15
+            </div>
+
+            <div class="destino">
+                Córdoba Central
+            </div>
+
+            <div class="linea">
+                Línea Azul
+            </div>
+
+            <div class="via">
+                1
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                08:30
+            </div>
+
+            <div class="destino">
+                Nueva Córdoba
+            </div>
+
+            <div class="linea">
+                Línea Roja
+            </div>
+
+            <div class="via">
+                2
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                08:45
+            </div>
+
+            <div class="destino">
+                Alta Córdoba
+            </div>
+
+            <div class="linea">
+                Línea Verde
+            </div>
+
+            <div class="via">
+                1
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                09:00
+            </div>
+
+            <div class="destino">
+                Villa El Libertador
+            </div>
+
+            <div class="linea">
+                Línea Amarilla
+            </div>
+
+            <div class="via">
+                3
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                09:15
+            </div>
+
+            <div class="destino">
+                Córdoba Central
+            </div>
+
+            <div class="linea">
+                Línea Azul
+            </div>
+
+            <div class="via">
+                2
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                09:30
+            </div>
+
+            <div class="destino">
+                Nueva Córdoba
+            </div>
+
+            <div class="linea">
+                Línea Roja
+            </div>
+
+            <div class="via">
+                1
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                09:45
+            </div>
+
+            <div class="destino">
+                Alta Córdoba
+            </div>
+
+            <div class="linea">
+                Línea Verde
+            </div>
+
+            <div class="via">
+                2
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="hora">
+                10:00
+            </div>
+
+            <div class="destino">
+                Villa El Libertador
+            </div>
+
+            <div class="linea">
+                Línea Amarilla
+            </div>
+
+            <div class="via">
+                3
+            </div>
+
+            <div class="estado">
+                EN HORARIO
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="mensaje">
+
+        PRÓXIMAS SALIDAS — SERVICIO NORMAL
+
+    </div>
+
+</section>
+
+{% endblock %}

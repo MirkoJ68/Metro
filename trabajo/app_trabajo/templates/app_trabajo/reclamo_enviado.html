@@ -1,0 +1,28 @@
+{% extends 'app_trabajo/base.html' %}
+
+{% block titulo %}
+Solicitud enviada
+{% endblock %}
+
+{% block contenido %}
+
+<section class="mensaje">
+
+    <h1>¡Solicitud enviada!</h1>
+
+    <p>
+        Recibimos correctamente tu solicitud.
+    </p>
+
+    <p>
+        Nuestro equipo se encargará de revisar la información
+        y se pondrá en contacto con vos si es necesario.
+    </p>
+
+    <a href="{% url 'inicio' %}" class="boton">
+        Volver al inicio
+    </a>
+
+</section>
+
+{% endblock %}

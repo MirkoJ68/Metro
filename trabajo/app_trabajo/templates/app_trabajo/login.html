@@ -1,0 +1,36 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Iniciar Sesión
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/login.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="login">
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <h2>Iniciar sesión</h2>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        {{ formulario.as_p }}
+
+        <button type="submit">
+            Ingresar
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

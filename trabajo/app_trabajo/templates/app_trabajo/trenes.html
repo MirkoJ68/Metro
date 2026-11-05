@@ -1,0 +1,39 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Trenes
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/trenes.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<div class="trenes">
+
+    <h1>Trenes</h1>
+
+    <p>Listado de trenes del sistema</p>
+
+    <div class="lista-trenes">
+
+        {% for tren in trenes %}
+
+            <div class="tren">
+                <h2>{{ tren.codigo }}</h2>
+                <p>Código del tren: {{ tren.codigo }}</p>
+            </div>
+
+        {% empty %}
+
+            <p>No hay trenes registrados.</p>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

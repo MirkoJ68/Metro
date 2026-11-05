@@ -1,0 +1,67 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Reclamos y objetos perdidos
+{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{% static 'app_trabajo/css/reclamos.css' %}">
+
+{% endblock %}
+
+
+{% block contenido %}
+
+<section class="reclamos">
+
+    <div class="reclamos-info">
+
+        <h1>¿Necesitás hacer un reclamo?</h1>
+
+        <p>
+            Desde este formulario podés realizar reclamos,
+            informar objetos perdidos o enviarnos sugerencias
+            para mejorar el servicio de MetroLBDG.
+        </p>
+
+        <div class="info-item">
+            🚆 <strong>Reclamos</strong>
+            <span>Informanos si tuviste algún inconveniente durante tu viaje.</span>
+        </div>
+
+        <div class="info-item">
+            🎒 <strong>Objetos perdidos</strong>
+            <span>Contanos dónde y cuándo perdiste tu objeto.</span>
+        </div>
+
+        <div class="info-item">
+            💡 <strong>Sugerencias</strong>
+            <span>Ayudanos a mejorar nuestro servicio.</span>
+        </div>
+
+    </div>
+
+
+    <div class="formulario">
+
+        <h2>Formulario</h2>
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+            {{ formulario.as_p }}
+
+            <button type="submit">
+                Enviar solicitud
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}

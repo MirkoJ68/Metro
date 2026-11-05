@@ -1,0 +1,418 @@
+.hero{
+
+    height:85vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("../img/tren.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-texto{
+
+    color:white;
+
+    max-width:700px;
+
+    padding:20px;
+
+}
+
+.hero-texto h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-texto p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+.presentacion{
+
+    width:80%;
+
+    max-width:1000px;
+
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.presentacion h2{
+
+    color:#003366;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.presentacion p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.servicios{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    min-height:260px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card h3{
+
+    color:#003366;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+    flex-grow:1;
+
+}
+
+.card .boton{
+
+    align-self:center;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    text-align:center;
+
+}
+
+.boton:hover{
+
+    background:#0056d2;
+
+    transform:translateY(-2px);
+
+}
+
+.contacto{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:100px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr;
+
+    gap:40px;
+
+    align-items:stretch;
+
+}
+
+.contacto-info{
+
+    background:
+
+        linear-gradient(
+            rgba(0,51,102,.92),
+            rgba(0,51,102,.92)
+        ),
+        url("../img/tren.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    min-height:430px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+}
+
+.contacto-info h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.contacto-info p{
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    font-size:17px;
+
+}
+
+.dato{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.contacto-form{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.contacto-form h2{
+
+    color:#003366;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+    font-size:32px;
+
+}
+
+.contacto-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.contacto-form input,
+.contacto-form textarea{
+
+    padding:15px;
+
+    border:1px solid #d0d0d0;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    transition:.3s;
+
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus{
+
+    border-color:#0d6efd;
+
+    outline:none;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.1);
+
+}
+
+.contacto-form textarea{
+
+    resize:vertical;
+
+}
+
+.contacto-form button{
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contacto-form button:hover{
+
+    background:#0056d2;
+
+}
+
+@media(max-width:900px){
+
+    .hero{
+
+        height:70vh;
+
+    }
+
+    .hero-texto h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-texto p{
+
+        font-size:18px;
+
+    }
+
+    .servicios{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contacto{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero-texto h1{
+
+        font-size:34px;
+
+    }
+
+    .presentacion{
+
+        width:90%;
+
+    }
+
+    .contacto{
+
+        width:95%;
+
+    }
+
+    .contacto-info,
+    .contacto-form{
+
+        padding:30px;
+
+    }
+
+}

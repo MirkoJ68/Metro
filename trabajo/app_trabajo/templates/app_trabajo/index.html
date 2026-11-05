@@ -1,0 +1,162 @@
+{% extends 'app_trabajo/base.html' %}
+{% load static %}
+
+{% block titulo %}
+Inicio
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'app_trabajo/css/index.css' %}">
+{% endblock %}
+
+{% block contenido %}
+
+<section class="hero">
+
+    <div class="hero-texto">
+
+        <h1>Bienvenido a MetroLBDG</h1>
+
+        <p>
+            Consultá horarios, estaciones y recorridos de manera rápida y sencilla.
+        </p>
+
+        <a href="{% url 'horarios' %}" class="boton">
+            Ver horarios
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="presentacion">
+
+    <h2>¿Quiénes somos?</h2>
+
+    <p>
+        MetroLBDG es un sistema diseñado para brindar información sobre las líneas
+        ferroviarias, permitiendo consultar horarios, estaciones y recorridos de
+        forma simple, rápida y segura.
+
+        Nuestro objetivo es facilitar el acceso a la información para que cada
+        viaje sea más cómodo y eficiente.
+    </p>
+
+</section>
+
+<section class="servicios">
+
+    <div class="card">
+
+        <h3>Horarios</h3>
+
+        <p>
+            Consultá los horarios actualizados de todas las líneas.
+        </p>
+
+        <a href="{% url 'horarios' %}" class="boton">
+            Consultar
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Estaciones</h3>
+
+        <p>
+            Conocé todas las estaciones y recorridos disponibles.
+        </p>
+
+        <a href="{% url 'estaciones' %}" class="boton">
+            Ver estaciones
+        </a>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Servicios</h3>
+
+        <p>
+            Conocé los distintos tipos de boletos, abonos y beneficios
+            disponibles para viajar con MetroLBDG.
+        </p>
+
+        <a href="{% url 'servicios' %}" class="boton">
+            Ver servicios
+        </a>
+
+    </div>
+
+</section>
+
+<section class="contacto">
+
+    <div class="contacto-info">
+
+        <h2>¿Tenés alguna consulta?</h2>
+
+        <p>
+            Nuestro equipo está disponible para ayudarte.
+
+            Respondemos dudas sobre horarios, estaciones, tarifas,
+            objetos perdidos y cualquier consulta relacionada con
+            MetroLBDG.
+        </p>
+
+        <div class="dato">
+            📍 Córdoba, Argentina
+        </div>
+
+        <div class="dato">
+            📞 (351) 123-4567
+        </div>
+
+        <div class="dato">
+            ✉ contacto@metrolbdg.com
+        </div>
+
+    </div>
+
+
+    <div class="contacto-form">
+
+        <h2>Enviá tu consulta</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Nombre completo"
+            >
+
+            <input
+                type="email"
+                placeholder="Correo electrónico"
+            >
+
+            <input
+                type="text"
+                placeholder="Asunto"
+            >
+
+            <textarea
+                placeholder="Escribí tu consulta..."
+                rows="7"
+            ></textarea>
+
+            <button type="submit">
+                Enviar consulta
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
